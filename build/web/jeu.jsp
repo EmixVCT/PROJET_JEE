@@ -163,7 +163,7 @@
                                 <%
                                 Connection conn=null;
                                 Statement stmt=null;
-
+                                int pp20coup =0;
                                 try {
                                     Class.forName("com.mysql.jdbc.Driver").newInstance();
                                     try {
@@ -190,11 +190,15 @@
                                                     pstatement.setString(3,games[n].toString() );
                                                     pstatement.executeUpdate();
                                                 }catch(Exception e){out.print("Erreur de sauvegarde dans la base de donnée");}
+                                            }else{
+                                                pp20coup++;
                                             }
 
                                         }
                                         out.print("</tbody></table></center></div>");  
-                                        
+                                        if (pp20coup>0){
+                                             out.print("<div class=\"row\"><div class=\"col-12\">"+pp20coup+" Partie(s) s'est(se sont) déroulée(s) en plus de 20 coups</div></div>");  
+                                        }
                                     }catch(Exception e){out.print("Erreur de connection à la base de donnée<br>Imposible de sauvegarder les resultats");}
                                 }catch(Exception e){out.print("Erreur de driver MySQL<br>");}
                             }else{

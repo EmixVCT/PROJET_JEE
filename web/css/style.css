@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 mars 2019, 09:48:44
+    Author     : mvincent
+*/
+
+
+
+@media (min-width: 992px) { }
+/*La fenetre*/
+body{
+	background-color: #ecf0f1;
+	color: #000;
+	max-width:100%;
+	width:auto;
+	min-width:700px;
+}
+
+h1{
+	font-size: 1.9em;
+	text-transform: uppercase;
+	margin:10px;
+}
+/*Entete*/
+.jumbotrom{
+	background-color: #FFF;
+}
+
+/*Spec de la bar de navigation*/
+.navbar{
+	font-family: "Gotham", Cambria, georgia, times, "times new roman", serif;
+	font-size: 0.87em;
+	text-transform: uppercase;
+	background : #007ba4;
+	padding:0px;
+}
+
+/* Spec du bouton rouge */
+.btn-outline-primary{
+	font-family: "Gotham", Cambria, georgia, times, "times new roman", serif;
+	font-size: 0.8em;
+}
+/* Spec du bouton deconnexion */
+.btn-outline-danger{
+	font-family: "Gotham", Cambria, georgia, times, "times new roman", serif;
+	font-size: 0.8em;
+}
+
+.btn-danger{
+	font-family: "Gotham", Cambria, georgia, times, "times new roman", serif;
+	font-size: 0.8em;
+	color:#fff;
+	text-transform: uppercase;
+
+}
+
+.btn-outline-secondary{
+	color: #007ba4;
+	border-color:#007ba4 ;
+}
+
+.btn-outline-secondary:hover{
+	color: #fff;
+	border-color:#fff ;
+	background-color: #007ba4;
+}
+
+/* padding des menus */
+.navbar-expand-md .navbar-nav .nav-link{
+	padding: 13px 5px 12px 5px; /*HAUT DROITE BAS GAUCHE*/
+}
+
+/* Souris au dessus des menu de la case */
+.navbar li:hover{
+	background-color : #ecf0f1;
+}
+/* Souris au dessus des menu du texte */
+.navbar-dark .navbar-nav .active > .nav-link:hover{
+	color:#333;
+}
+/* Souris au dessus du bouton déconnexion */
+.btn-outline-danger:hover{
+	color:#333;
+}
+
+
+/*Les "div" table annuaires*/
+#table{
+	margin-left: auto;
+	margin-right: auto;
+	width:auto;
+}
+
+/*les entetes des tables*/
+.table th{
+	font-family: "Gotham", Cambria, georgia, times, "times new roman", serif;
+	font-size: 0.85em;
+	background-color:#007ba4;
+	color:#fff;
+	text-align: center;
+}
+
+.table-fixed thead {
+  width: 99.5%;
+}
+.table-fixed tbody {
+	height:auto;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scrollbar-width: thin;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+.tab-petit{
+	height:100%;
+	max-height: 370px;
+	width: 75%;
+	overflow: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scrollbar-width: thin;
+	margin-left: auto;
+	margin-right: auto
+}
+
+#contenue{ 
+	overflow: auto;
+	width:75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom:60px;
+	min-width:700px;
+}
+
+
+
+button[id="search"],
+button[id="searchSelection"]{
+	margin:5px;
+	float:right;
+}
+
+label{
+	margin-bottom:0px;
+	padding-left:0px;
+}
+
+.connexion img{
+	width:100%;
+}
+.connexion{
+	border-radius:1px;
+	background:#fff;
+	padding:0% 15% 15% 15%;
+	margin-top:10%;
+}
+
+.connexion h6,h3{
+	text-align:center;
+}
+
+#div_autre{
+	display:none;
+}
+
+
+.btn-right{
+	float:right;
+}
+
+#myAnimation {
+  margin:25px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: red;
+  visibility:hidden;
+
+}
